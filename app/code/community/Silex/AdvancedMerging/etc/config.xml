@@ -1,0 +1,16 @@
+<config>
+    <modules>
+        <Silex_AdvancedMerging>
+            <version>1.0.0</version>
+        </Silex_AdvancedMerging>
+    </modules>
+    <frontend>
+        <layout>
+            <updates>
+                <silex_advancedmerging>
+                    <file>silex/advanced_merging.xml</file>
+                </silex_advancedmerging>
+            </updates>
+        </layout>
+    </frontend>
+</config>

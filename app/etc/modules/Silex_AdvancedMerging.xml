@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Silex_AdvancedMerging>
+            <active>true</active>
+            <codePool>community</codePool>
+        </Silex_AdvancedMerging>
+    </modules>
+</config>

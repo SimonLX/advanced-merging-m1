@@ -1,0 +1,179 @@
+<?xml version="1.0"?>
+<layout>
+    <default>
+        <reference name="head">
+            <block type="page/html_head" name="custom.merger.head" template="silex/advanced_merging/merger.phtml"/>
+        </reference>
+        <reference name="before_body_end">
+            <block type="page/html_head" name="custom.merger.end" template="silex/advanced_merging/merger.phtml"/>
+        </reference>
+    </default>
+    <catalog_product_compare_index>
+        <reference name="head">
+            <action method="removeItem"><type>js</type><name>scriptaculous/scriptaculous.js</name></action>
+            <action method="removeItem"><type>js</type><name>varien/product.js</name></action>
+        </reference>
+        <reference name="custom.merger.head">
+            <action method="addJs"><script>varien/product.js</script></action>
+        </reference>
+        <reference name="custom.merger.end">
+            <action method="addJs"><script>scriptaculous/scriptaculous.js</script></action>
+        </reference>
+    </catalog_product_compare_index>
+    <catalog_product_send>
+        <reference name="head">
+            <action method="removeItem"><type>js</type><name>varien/product.js</name></action>
+        </reference>
+        <reference name="custom.merger.head">
+            <action method="addJs"><script>varien/product.js</script></action>
+        </reference>
+    </catalog_product_send>
+    <catalog_product_view>
+        <reference name="head">
+            <action method="removeItem"><type>js</type><name>varien/product.js</name></action>
+            <action method="removeItem"><type>js</type><name>varien/configurable.js</name></action>
+            <action method="removeItem"><type>js</type><name>calendar/calendar.js</name></action>
+            <action method="removeItem"><type>js</type><name>calendar/calendar-setup.js</name></action>
+            <action method="removeItem"><type>js_css</type><name>calendar/calendar-win2k-1.css</name></action>
+        </reference>
+        <reference name="custom.merger.head">
+            <action method="addJs"><script>varien/product.js</script></action>
+            <action method="addJs"><script>varien/configurable.js</script></action>
+            <action method="addJs"><script>calendar/calendar.js</script></action>
+            <action method="addJs"><script>calendar/calendar-setup.js</script></action>
+            <action method="addItem"><type>js_css</type><name>calendar/calendar-win2k-1.css</name></action>
+        </reference>
+    </catalog_product_view>
+    <catalogsearch_advanced_index>
+        <reference name="head">
+            <action method="removeItem"><type>js</type><name>calendar/calendar.js</name></action>
+            <action method="removeItem"><type>js</type><name>calendar/calendar-setup.js</name></action>
+            <action method="removeItem"><type>js_css</type><name>calendar/calendar-win2k-1.css</name></action>
+        </reference>
+        <reference name="custom.merger.head">
+            <action method="addJs"><script>calendar/calendar.js</script></action>
+            <action method="addJs"><script>calendar/calendar-setup.js</script></action>
+            <action method="addItem"><type>js_css</type><name>calendar/calendar-win2k-1.css</name></action>
+        </reference>
+    </catalogsearch_advanced_index>
+    <checkout_cart_index>
+        <reference name="head">
+            <action method="removeItem"><type>js</type><name>varien/weee.js</name></action>
+        </reference>
+        <reference name="custom.merger.head">
+            <action method="addJs"><script>varien/weee.js</script></action>
+        </reference>
+    </checkout_cart_index>
+    <checkout_multishipping>
+        <reference name="head">
+            <action method="removeItem"><type>js</type><name>varien/weee.js</name></action>
+        </reference>
+        <reference name="custom.merger.head">
+            <action method="addJs"><script>varien/weee.js</script></action>
+        </reference>
+    </checkout_multishipping>
+    <checkout_multishipping_overview>
+        <reference name="head">
+            <action method="removeItem"><type>js</type><name>mage/centinel.js</name></action>
+        </reference>
+        <reference name="custom.merger.head">
+            <action method="addJs"><script>mage/centinel.js</script></action>
+        </reference>
+    </checkout_multishipping_overview>
+    <checkout_onepage_index>
+        <reference name="head">
+            <action method="removeItem"><type>js</type><name>mage/centinel.js</name></action>
+            <action method="removeItem"><type>js</type><name>mage/directpost.js</name></action>
+            <action method="removeItem"><type>js</type><name>varien/weee.js</name></action>
+            <action method="removeItem"><type>js</type><name>mage/captcha.js</name></action>
+        </reference>
+        <reference name="custom.merger.head">
+            <action method="addJs"><script>mage/centinel.js</script></action>
+            <action method="addJs"><script>mage/directpost.js</script></action>
+            <action method="addJs"><script>varien/weee.js</script></action>
+            <action method="addJs"><script>mage/captcha.js</script></action>
+        </reference>
+    </checkout_onepage_index>
+    <customer_account_create>
+        <reference name="head">
+            <action method="removeItem"><type>js</type><name>mage/captcha.js</name></action>
+        </reference>
+        <reference name="custom.merger.head">
+            <action method="addJs"><script>mage/captcha.js</script></action>
+        </reference>
+    </customer_account_create>
+    <customer_account_forgotpassword>
+        <reference name="head">
+            <action method="removeItem"><type>js</type><name>mage/captcha.js</name></action>
+        </reference>
+        <reference name="custom.merger.head">
+            <action method="addJs"><script>mage/captcha.js</script></action>
+        </reference>
+    </customer_account_forgotpassword>
+    <customer_account_login>
+        <reference name="head">
+            <action method="removeItem"><type>js</type><name>mage/captcha.js</name></action>
+        </reference>
+        <reference name="custom.merger.head">
+            <action method="addJs"><script>mage/captcha.js</script></action>
+        </reference>
+    </customer_account_login>
+    <customer_logged_in>
+        <reference name="head">
+            <action method="removeItem"><type>js</type><name>varien/weee.js</name></action>
+        </reference>
+        <reference name="custom.merger.head">
+            <action method="addJs"><script>varien/weee.js</script></action>
+        </reference>
+    </customer_logged_in>
+    <MAP_popup>
+        <reference name="head">
+            <action method="removeItem"><type>skin_js</type><name>js/msrp.js</name></action>
+        </reference>
+        <reference name="custom.merger.head">
+            <action method="addItem" ifconfig="sales/msrp/enabled"><type>skin_js</type><name>js/msrp.js</name></action>
+        </reference>
+    </MAP_popup>
+    <paypal_express_review>
+        <reference name="head">
+            <action method="removeItem"><type>skin_js</type><name>js/checkout/review.js</name></action>
+        </reference>
+        <reference name="custom.merger.head">
+            <action method="addItem"><type>skin_js</type><name>js/checkout/review.js</name></action>
+        </reference>
+    </paypal_express_review>
+    <paypaluk_express_review>
+        <reference name="head">
+            <action method="removeItem"><type>skin_js</type><name>js/checkout/review.js</name></action>
+        </reference>
+        <reference name="custom.merger.head">
+            <action method="addItem"><type>skin_js</type><name>js/checkout/review.js</name></action>
+        </reference>
+    </paypaluk_express_review>
+    <PRODUCT_TYPE_bundle>
+        <reference name="head">
+            <action method="removeItem"><type>skin_js</type><name>js/bundle.js</name></action>
+        </reference>
+        <reference name="custom.merger.head">
+            <action method="addItem"><type>skin_js</type><name>js/bundle.js</name></action>
+        </reference>
+    </PRODUCT_TYPE_bundle>
+    <review_product_list>
+        <reference name="head">
+            <action method="removeItem"><type>js</type><name>varien/product.js</name></action>
+            <action method="removeItem"><type>js</type><name>varien/configurable.js</name></action>
+        </reference>
+        <reference name="custom.merger.head">
+            <action method="addJs"><script>varien/product.js</script></action>
+            <action method="addJs"><script>varien/configurable.js</script></action>
+        </reference>
+    </review_product_list>
+    <sendfriend_product_send>
+        <reference name="head">
+            <action method="removeItem"><type>js</type><name>varien/product.js</name></action>
+        </reference>
+        <reference name="custom.merger.head">
+            <action method="addJs"><script>varien/product.js</script></action>
+        </reference>
+    </sendfriend_product_send>
+</layout>

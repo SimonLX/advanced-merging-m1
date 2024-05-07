@@ -1,0 +1,4 @@
+app/code/community/Silex/AdvancedMerging/                          app/code/community/Silex/AdvancedMerging/
+app/design/frontend/base/default/layout/silex/advanced_merging.xml app/design/frontend/base/default/layout/silex/advanced_merging.xml
+app/design/frontend/base/default/template/silex/advanced_merging/  app/design/frontend/base/default/template/silex/advanced_merging/
+app/etc/modules/Silex_AdvancedMerging.xml                          app/etc/modules/Silex_AdvancedMerging.xml

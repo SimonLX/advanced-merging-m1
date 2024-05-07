@@ -1,0 +1,14 @@
+{
+    "name": "simonlx/advanced-merging-m1",
+    "description": "Optimize JS and CSS merging in Magento 1.",
+    "type": "magento-module",
+    "license": "GPL-3.0",
+    "version": "1.0.0",
+    "authors":[
+        {
+            "name":"Simon Laubet-Xavier",
+            "email":"simon.laubetxavier@home-made.io"
+        }
+    ],
+    "homepage": "https://github.com/SimonLX/advanced-merging-m1"
+}
